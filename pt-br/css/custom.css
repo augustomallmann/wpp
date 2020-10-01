@@ -1,0 +1,422 @@
+/* IMPORTAÇÃO DA FONTE ROBOTO */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* GERAL */
+
+@media (min-width: 1200px) 
+{
+  .container{
+    min-width: 1200px;
+  }
+}
+
+@media (height: 812px) 
+{
+  .margem{
+    height: 9vh;
+    width: 100%;
+  }
+}
+@media (height: 736px) 
+{
+  .margem{
+    height: 11vh;
+    width: 100%;
+  }
+}
+@media (height: 667px) 
+{
+  .margem{
+    height: 13vh;
+    width: 100%;
+  }
+}
+
+@media (max-height: 640px) 
+{
+  .margem{
+    height: 25vh;
+    width: 100%;
+  }
+}
+@media (width: 414px) 
+{
+  .second{
+    margin-top: 0vh !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo{
+    max-height: 15.17vh;
+    position: absolute;
+    z-index: 1;
+    left: 0 !important;
+    right: 0;
+    margin: auto
+    }
+    .idiomas{ 
+      top: 1rem !important;
+      right: 1rem !important;
+    }
+  .first{
+    height: 140vh !important;
+  }
+ 
+  .first h1{
+    font-size: 1.2rem;
+    }
+    .first p{
+      font-size: 1.1rem;
+    }
+    .missao{
+      font-size: 1.3rem !important;
+    }
+    .second{
+      margin-top: 0vh !important;
+      height: 60% !important;
+    }
+    .second img{
+     display:none !important; 
+    }
+    .third img{
+      height: 250px !important;
+      width: 250px !important;
+      /* border: 10px solid #FFBB00;   */
+      /* margin-top: 3rem!important; */
+      margin-bottom: 3rem !important;
+  }
+  
+    p{
+      font-size: 0.8rem !important; 
+    }
+    .inter-section p{
+      font-size: 0.2rem ; 
+    }
+    .padrao{  /* título padrão */
+      font-size: 1.2rem !important; 
+      margin-bottom: .5rem!important;
+  }
+  .fourth{
+    height: 100% !important;
+  }
+  .fourth h1{
+    font-size: 1.2rem !important; 
+  }
+  .second .blue-box{
+    position: absolute;
+    bottom: 0 !important;
+    z-index: 1;
+    height: 33% !important;
+    width: 100% !important ;
+  }
+  .third .yellow-box{
+    position: relative;
+    z-index: 3;
+    left: 0 ;
+    height: 33% !important;
+    width: 100% !important ;
+    }
+}
+@media screen and (max-width: 768px) {
+  .first h1{
+  font-size: 1.9rem !important;
+  }
+  .first p{
+    font-size: 1.1rem;
+  }
+  .second img{
+    height: 250px !important;
+    width: 250px !important;
+  }
+  .third img{
+    height: 250px !important;
+    width: 250px !important;
+  }
+  p{
+    font-size: 0.8rem !important; 
+  }
+  .inter-section p{
+    font-size: 0.8rem ; 
+  }
+  .padrao{  /* título padrão */
+    font-size: 1.2rem !important; 
+}
+.fourth h1{
+  font-size: 1.2rem !important; 
+}
+}
+*{
+  font-family: 'Roboto', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  font-size: 16px;
+}
+
+.hideme {
+  opacity:0;
+}
+
+.padrao{  /* título padrão */
+  text-align: left;
+  font-size: 1.6rem; 
+  font-weight: bold;
+  text-transform: none;
+letter-spacing: 0px;
+color: #555555;
+}
+
+a.link {
+  font-size: 1rem;
+  color: #fff !important;
+  font-weight: 300;
+  display: inline;
+  }
+  a.link:hover {
+    text-decoration: none;
+    }
+  li.item {
+    display:inline;
+    padding: 0rem 1rem
+  }
+  li.item:not(:last-child) {
+    border-right: 1px solid #fff;
+  }
+
+  .svg-footer {
+    max-width: 15%;
+  }
+/* PRIMEIRA SECTION */
+
+.first{
+  background-size: cover;
+  background-image: url(../assets/imagem_topo.jpg);
+  height: 117vh;
+}
+.idiomas{
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  right: 2rem;
+}
+
+.logo{
+  max-height: 15.17vh;
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  left: 2rem;
+}
+.centralizar{
+  align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+.first p{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.first h1{ /* título principal */
+  text-align: center;
+font-size: 2.7rem;
+font-weight: bold;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: uppercase;
+}
+
+/* SEGUNDA SECTION */
+
+.second{
+  margin-top: 25vh;
+  height: 100vh;
+}
+.second p{
+  color: #555;
+}
+.second .row{
+  position: relative;
+  z-index: 1;
+  /* min-width: 90%; */
+}
+.second .blue-box{
+  height: 100%;
+  width: 0;
+  position: absolute;
+  right: 0;
+  background: #4BB3E8;
+  z-index: -1;
+}
+
+.second img{
+  height: 400px ;
+  width: 400px;
+  object-fit: cover;
+}
+
+/* TERCEIRA SECTION */
+
+.third{
+  height: 100vh;
+}
+.third p{
+  color: #555;
+}
+.third .row{
+  position: relative;
+  z-index: 1;
+  /* min-width: 90%; */
+}
+.third .yellow-box{
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  background-color: #FFBB00;
+  z-index: -1;
+}
+.third img{
+  height: 400px ;
+  width: 400px;
+  object-fit: cover;
+  /* margin: 0px !important; */
+}
+
+.fourth{
+  height: 100vh;
+}
+
+.fourth img{ 
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+    display: block;
+    max-width: auto;
+    height: 110px !important;
+}
+.fourth img:hover{ 
+   -webkit-filter: none; /* Safari 6.0 - 9.0 */
+   filter: none;
+ }
+
+.line-break {
+  width: 100%;
+}
+
+.fourth h1{
+  text-align: center;
+  font-size: 1.5rem; 
+  font-weight: bold;
+  text-transform: none;
+  letter-spacing: 0px;
+color: #555555; 
+}
+.fourth h2{
+  text-align: center;
+  font-size: 1.1rem; 
+  text-transform: capitalize;
+  letter-spacing: 0px;
+color: #555555; 
+
+}
+
+.inter-section{
+  background-color: #fff;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.inter-section p{
+  text-align: left;
+  font-size: 1rem; 
+  font-weight: 400;
+  text-transform: none;
+letter-spacing: 0px;
+color: #555555;
+}
+
+.footer{
+  width: 100%;
+  min-height: 130px;
+  background-color: #264593;
+}
+.footer p.copyright{
+text-align: center;
+font-size: 0.8rem;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 0.19;
+}
+
+.footer .card-custom{
+  position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+.footer .link{
+  letter-spacing: 0.6px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer .card-body{
+letter-spacing: 0.26px;
+font-size: 1rem;
+color: rgba(255,255,255, 0.79);
+}
+.footer #collapseOne .card-body{
+  background-color: #FFBB00;
+}
+
+.footer #collapseTwo .card-body{
+  background-color: #009CDC;
+}
+
+.footer .contato{
+  padding:0;
+  border-bottom: 0;
+  background-color: #FFBB00;
+}
+.footer .contato a.email-link {
+  font-size: 1rem; 
+  display: inline;
+  }
+.footer .contato a.email-link:hover {
+    text-decoration: none;
+    }
+.footer li.email {
+    display: inline;
+    padding: 0rem 2rem;
+  }
+.footer li.email:not(:last-child) {
+    border-right: 0.8px solid rgba(255,255,255, 0.79);
+  }
+
+.footer a.erasmus{
+  color: rgba(255,255,255, 0.79);
+  text-decoration: underline;
+  }
+
+.footer .erasmus{
+  padding:0;
+  border-bottom: 0;
+  background-color: #009CDC;
+}
